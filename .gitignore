@@ -1,0 +1,11 @@
+# OSX
+#
+.DS_Store
+
+# WP
+#
+wp-content/theme/sage/node_modules
+wp-content/theme/sage/dist
+wp-content/theme/sage/bower_components
+wp-content/theme/sage/npm-debug.log
+wp-content/theme/sage/vendor

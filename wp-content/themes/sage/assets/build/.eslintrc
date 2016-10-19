@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "babel",
+    "flowtype"
+  ],
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+  },
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "semi": [2, "never"],
+    "no-floating-decimal": 0,
+    "import/no-unresolved": 0,
+    "arrow-body-style": 0,
+    "no-return-assign": 0,
+    "no-console": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0
+  }
+}

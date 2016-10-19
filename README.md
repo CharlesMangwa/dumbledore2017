@@ -1,1 +1,15 @@
-# dumbledore2017
+# Dumbledore 2017 🔮
+
+### Setup
+
+- Install `Yarn`:
+
+```
+npm install --global yarn
+```
+
+- In the folder where you've setuped your `localhsot`, run:
+
+```
+git clone https://github.com/CharlesMangwa/dumbledore2017.git Dumbledore2017 && cd Dumbledore2017/wp-content/themes/sage && yarn && yarn start
+```
