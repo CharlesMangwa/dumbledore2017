@@ -1,11 +1,7 @@
-# OSX
-#
-.DS_Store
-
-# WP
-#
-wp-content/theme/sage/node_modules
-wp-content/theme/sage/dist
-wp-content/theme/sage/bower_components
-wp-content/theme/sage/npm-debug.log
-wp-content/theme/sage/vendor
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+dist
+bower_components
+node_modules
+npm-debug.log
+vendor

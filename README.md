@@ -5,13 +5,13 @@
 - Install `Yarn`:
 
 ```
-npm install --global yarn
+npm i -g yarn
 ```
 
-- In the folder where you've setuped your `localhsot`, run:
+- In the `themes` folder where you've setuped your Wordpress install, run:
 
 ```
-git clone https://github.com/CharlesMangwa/dumbledore2017.git Dumbledore2017 && cd Dumbledore2017/wp-content/themes/sage && yarn && yarn start
+git clone https://github.com/CharlesMangwa/dumbledore2017.git dumbledore2017 && cd dumbledore2017 && yarn && yarn start
 ```
 
-- Then, open your Wordpress, set it up, and choose `Sage` as a theme.
+- Then, open your Wordpress, set it up, and choose `Dumbledore 2017 🔮`
