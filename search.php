@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays standard posts
+ * Displays search posts
  */
 ?>
 
@@ -10,8 +10,12 @@
 
     <?php if ( have_posts() ) : ?>
 
+        <header class="page-header">
+            <h1 class="page-title"><?php printf( __( 'Search results for: %s', 'blujay' ), '<span>"' . get_search_query() . '"</span>' ); ?></h1>
+        </header>
+
         <?php while ( have_posts() ) : the_post(); ?>
-            <?php  get_template_part( 'partials/content'); ?>
+            <?php get_template_part( 'partials/content', 'excerpt' ); ?>
         <?php endwhile; ?>
 
         <?php if ($wp_query->max_num_pages > 1) : ?>

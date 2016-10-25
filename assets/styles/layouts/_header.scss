@@ -1,6 +1,29 @@
-.banner .nav li {
-  @extend .nav-item;
+/**
+ * Header
+ */
+
+.site-header {
+    margin-top: 15px;
+    text-align: center;
+
+    @include breakpoint($md) {
+        text-align: left;
+    }
 }
-.banner .nav a {
-  @extend .nav-link;
+
+.primary-navigation {
+    padding-top: 20px;
+    border-top: 1px solid $color-border;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: $f6;
+    }
 }
