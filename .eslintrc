@@ -25,6 +25,7 @@
     "semi": [2, "never"],
     "no-floating-decimal": 0,
     "import/no-unresolved": 0,
+    "import/newline-after-import": 0,
     "arrow-body-style": 0,
     "no-return-assign": 0,
     "no-console": 0,
