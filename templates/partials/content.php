@@ -12,7 +12,7 @@
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h1>
 
-        <?php get_template_part('partials/post-meta'); ?>
+        <?php get_template_part('/post-meta'); ?>
     </header>
 
     <section class="post-featured-image">
@@ -24,7 +24,7 @@
     </section>
 
     <footer class="post-footer">
-        <?php get_template_part('partials/comments-link'); ?>
+        <?php get_template_part('/comments-link'); ?>
     </footer>
 
 </article>
