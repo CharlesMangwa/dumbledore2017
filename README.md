@@ -19,3 +19,7 @@ git clone https://github.com/CharlesMangwa/dumbledore2017.git dumbledore2017 && 
 ### Development
 
 - Simply run `gulp` and you're good to go!
+
+### Production
+
+- Run `gulp --production` and that's it!
