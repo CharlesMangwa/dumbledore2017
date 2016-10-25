@@ -23,5 +23,10 @@
 @import "layouts/posts";
 @import "layouts/sidebar";
 
+// Utils
+@import "utils/breakpoints";
+@import "utils/functions";
+@import "utils/mq";
+
 // Templates
 @import "templates/page-with-sidebar";
