@@ -75,6 +75,10 @@ add_action( 'wp_enqueue_scripts', 'blujay_register_assets' );
  */
 register_nav_menus(array(
     'primary' => __( 'Primary Menu', 'blujay' ),
+    'projet' => __( 'Footer Projet Menu', 'blujay' ),
+    'newsletter' => __( 'Footer Newsletter Menu', 'blujay' ),
+    'sitemap' => __( 'Footer Sitemap Menu', 'blujay' ),
+    'contact' => __( 'Footer Contact Menu', 'blujay' ),
 ));
 
 /**

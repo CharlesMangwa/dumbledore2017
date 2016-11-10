@@ -54,3 +54,9 @@ $susy: (
     container: 1200px,
     global-box-sizing: border-box
     );
+
+// Font style
+$uppercase: uppercase;
+.uppercase {
+    text-transform: $uppercase;
+}
