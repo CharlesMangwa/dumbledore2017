@@ -15,15 +15,18 @@ $color-link-hover:  darken($color-link, 10%);
 $color-success:     #5cb85c;
 $color-info:        #5bc0de;
 $color-warning:     #f0ad4e;
-$color-danger:      #d9534f;
+$color-danger:      #d81128;
 $color-border:      #979797;
 $color-dumby-blue:  #004090;
+$color-dumby-grey:  #252525;
+$color-dumby-white: #eaeaea;
+$color-dumby-font:  #a3a3a3;
 
 // Custom colors
 $color-border:      #dddddd;
 
 // Font stack
-$font-family-sans:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans:  'Open Sans', Helvetica, Arial, sans-serif;
 $font-family-serif: 'Roboto Slab', Georgia, serif;
 $font-family-title: 'agenda-boldregular', Georgia, sans-serif;
 $font-family-base:  $font-family-sans;
