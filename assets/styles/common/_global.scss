@@ -82,7 +82,12 @@ img {
 //
 // Layout
 //
-
+// .site-content {
+//     display: none;
+// }
+// .site-footer {
+//     display: none;
+// }
 .container {
     @include container;
     padding-right: 20px;

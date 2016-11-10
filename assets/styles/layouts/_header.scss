@@ -1,29 +1,89 @@
 /**
  * Header
  */
+.PrimaryHeader {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 120px;
+  border-bottom: thin solid rgba($color-border, 0.4);
 
-.site-header {
-    margin-top: 15px;
-    text-align: center;
+  @media only screen and (max-width: 868px) {
+      height: 500px;
+  }
 
-    @include breakpoint($md) {
-        text-align: left;
+  &__wrap {
+      height: 100%;
+      width: 75%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: 1100px){
+          width: 100vw;
+      }
+  }
+
+}
+.PrimaryHeader__wrap__navbar {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 868px) {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    > div, ul {
+        list-style: none;
+        text-transform: uppercase;
+        font-family: $font-family-title;
+        letter-spacing: 1.5px;
+        font-size: 0.93em;
     }
 }
+.menu-menu-1-container {
+    width: 80%;
 
-.primary-navigation {
-    padding-top: 20px;
-    border-top: 1px solid $color-border;
+    @media only screen and (max-width: 868px) {
+        height: 300px;
+    }
+}
+.menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    @media only screen and (max-width: 868px) {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    ul li {
-        display: inline-block;
-        margin-right: 15px;
-        font-size: $f6;
+    > li:nth-child(5) {
+        border: bold solid $color-danger;
+
+        a {
+            color: $color-danger;
+            padding: 30px;
+        }
     }
+
+    > li:nth-child(6) {
+        border: bold solid $color-dumby-blue;
+
+        a {
+            color: $color-dumby-blue;
+            padding: 30px;
+        }
+    }
+
+}
+.PrimaryHeader__wrap__navbar__logo {
+    width: 100px;
 }

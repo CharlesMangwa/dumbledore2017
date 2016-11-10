@@ -10,12 +10,14 @@
 $color-body:        #ffffff;
 $color-text:        #444444;
 $color-heading:     #444444;
-$color-link:        #0099dd;
+$color-link:        #414141;
 $color-link-hover:  darken($color-link, 10%);
 $color-success:     #5cb85c;
 $color-info:        #5bc0de;
 $color-warning:     #f0ad4e;
 $color-danger:      #d9534f;
+$color-border:      #979797;
+$color-dumby-blue:  #004090;
 
 // Custom colors
 $color-border:      #dddddd;
@@ -23,6 +25,7 @@ $color-border:      #dddddd;
 // Font stack
 $font-family-sans:  'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-serif: 'Roboto Slab', Georgia, serif;
+$font-family-title: 'agenda-boldregular', Georgia, sans-serif;
 $font-family-base:  $font-family-sans;
 
 // Base typography
