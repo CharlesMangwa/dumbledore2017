@@ -15,7 +15,7 @@
     <div class="PrimaryFooter__wrap__container">
       <nav class="PrimaryFooter__wrap__container__subnav">
         <img src="<?php bloginfo( 'template_url' )?>/assets/images/logo-dumby.svg" alt="logo" class="PrimaryFooter__wrap__container__subnav__logo" />
-        <?php wp_nav_menu( array( 'theme_location' => 'contact' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'contact', 'menu_class' => 'menu ContactMenu' ) ); ?>
       </nav>
       <nav class="PrimaryFooter__wrap__container__subnav PrimaryFooter__wrap__container__subnav--newsletter--partners">
         <div class="PrimaryFooter__wrap__container__subnav__wrapper">
@@ -44,7 +44,7 @@
       </nav>
       <nav class="PrimaryFooter__wrap__container__subnav">
         <h4 class="uppercase">notre projet</h4>
-        <?php wp_nav_menu( array( 'theme_location' => 'projet' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'projet') ); ?>
       </nav>
     </div>
   </nav>

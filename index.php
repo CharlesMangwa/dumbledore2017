@@ -5,8 +5,14 @@
 ?>
 
 <?php get_header(); ?>
+<div class="Homepage">
+  <section class="Homepage__heading">
 
-<main class="main">
+  </section>
+
+</div>
+
+<main class="Homepage__content">
 
     <?php if ( have_posts() ) : ?>
 
@@ -25,7 +31,5 @@
     <?php endif; ?>
 
 </main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

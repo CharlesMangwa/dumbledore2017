@@ -1,0 +1,19 @@
+.Homepage {
+  position: relative;
+  display: flex;
+}
+
+.Homepage__heading {
+  width: 100vw;
+  background: red;
+  height: 70vh;
+  background-image: url('../images/background-slider.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Homepage__content {
+  max-width: 68vw;
+  margin: 0 auto;
+}
