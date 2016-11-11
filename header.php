@@ -57,12 +57,10 @@
 <body <?php body_class(); ?>>
 
     <header class="PrimaryHeader">
-        <div class="PrimaryHeader__wrap">
-            <nav class="PrimaryHeader__wrap__navbar primary-navigation">
-                <img src="<?php bloginfo( 'template_url' )?>/assets/images/logo-dumby.svg" alt="logo" class="PrimaryHeader__wrap__navbar__logo" />
-                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-            </nav>
-        </div>
+        <nav class="PrimaryHeader__wrapper primary-navigation">
+              <img src="<?php bloginfo( 'template_url' )?>/assets/images/logo-dumby.svg" alt="logo" class="PrimaryHeader__wrap__navbar__logo" />
+              <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        </nav>
     </header>
 
     <section class="site-content">
