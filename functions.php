@@ -24,4 +24,7 @@ foreach ($blujay_includes as $file) {
     require_once $filepath;
 }
 unset($file, $filepath);
+
+// Include of the custom_post_types
+include_once('inc/custom_post_types.php');
 ?>
