@@ -12,5 +12,5 @@
             "assets/styles/main.scss"
         ]
     },
-    "devUrl": "http://blujay.dev"
+    "devUrl": "localhost:80"
 }
