@@ -10,12 +10,18 @@
 $color-body:        #ffffff;
 $color-text:        #444444;
 $color-heading:     #444444;
-$color-link:        #0099dd;
+$color-link:        #414141;
 $color-link-hover:  darken($color-link, 10%);
 $color-success:     #5cb85c;
 $color-info:        #5bc0de;
 $color-warning:     #f0ad4e;
-$color-danger:      #d9534f;
+$color-danger:      #d81128;
+$color-border:      #979797;
+$color-dumby-blue:  #004090;
+$color-dumby-dblue: #213958;
+$color-dumby-grey:  #252525;
+$color-dumby-white: #eaeaea;
+$color-dumby-font:  #a3a3a3;
 
 // Custom colors
 $color-border:      #dddddd;
@@ -38,3 +44,9 @@ $susy: (
     container: 1200px,
     global-box-sizing: border-box
     );
+
+// Font style
+$uppercase: uppercase;
+.uppercase {
+    text-transform: $uppercase;
+}
