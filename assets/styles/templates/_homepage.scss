@@ -12,7 +12,8 @@
   background-position: center;
 }
 
-.Homepage__content {
-  max-width: 68vw;
-  margin: 0 auto;
+.Homepage__content__section {
+  > ul, li {
+    list-style: none;
+  }
 }
