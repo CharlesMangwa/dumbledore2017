@@ -1,5 +1,15 @@
 .button {
-  border: bold solid $color-danger;
-  color: $color-danger;
-  padding: 20px;
+  border: bold solid $color-dumby-dblue;
+  font-family: $font-family-title;
+  font-weight: 800;
+  font-size: .95em;
+  letter-spacing: 1.5px;
+  color: $color-dumby-dblue;
+  padding: 12px 30px;
+  transition: ease-out 100ms;
+
+  &:hover {
+    background: $color-dumby-dblue;
+    color: $color-body;
+  }
 }

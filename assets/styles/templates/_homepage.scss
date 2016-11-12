@@ -13,7 +13,22 @@
 }
 
 .Homepage__content__section {
+  padding: 0;
   > ul, li {
     list-style: none;
+  }
+}
+
+.Homepage__content__section--first {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+
+  li {
+    width: 50%;
+  }
+
+  li:first-child {
+    margin: 120px 0;
   }
 }

@@ -3,29 +3,29 @@
  */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    background:  $color-body;
-    color:       $color-text;
-    font-weight: normal;
-    font-size:   $font-size-base;
-    font-family: $font-family-sans;
-    line-height: $line-height-base;
-    box-sizing:  border-box;
+  background: $color-body;
+  color: $color-text;
+  font-weight: normal;
+  font-size: $font-size-base;
+  font-family: $font-family-sans;
+  line-height: $line-height-base;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 textarea, input, button {
-    font-size: $font-size-base;
+  font-size: $font-size-base;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 //
@@ -33,24 +33,24 @@ img {
 //
 
 .site-title {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 4.5rem;
-    font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 4.5rem;
+  font-weight: 400;
 }
 
 .tagline {
-    margin-top: 0;
-    font-size: $f4;
+  margin-top: 0;
+  font-size: $f4;
 }
 
 .page-title {
-    margin-top: 50px;
-    margin-bottom: 30px
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .MainWrapper {
-  max-width: 68vw;
+  max-width: 67vw;
   margin: 0 auto;
 }
 
@@ -65,8 +65,7 @@ img {
 //     display: none;
 // }
 .container {
-
-    @include breakpoint($xl) {
-        padding: 0;
-    }
+  @include breakpoint($xl) {
+    padding: 0;
+  }
 }

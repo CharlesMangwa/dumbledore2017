@@ -35,7 +35,7 @@
   .FooterSubmit {
     background: $color-dumby-dblue;
     color: $color-dumby-white;
-    border:large solid $color-dumby-dblue;
+    border: large solid $color-dumby-dblue;
     width: 50px;
     height: 50px;
     padding: 0;
@@ -43,7 +43,7 @@
 
   // Responsive
   @media only screen and (max-width: 868px) {
-    height: 900px;
+    height: 1000px;
     text-align: center;
   }
 
@@ -134,6 +134,7 @@
     text-align: center;
     margin: 20px;
     line-height: 2.5em;
+    font-weight: 700;
   }
   // Get first li element from menu
   > li:first-child {

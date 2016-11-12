@@ -19,18 +19,18 @@
       </nav>
       <nav class="PrimaryFooter__wrap__container__subnav PrimaryFooter__wrap__container__subnav--newsletter--partners">
         <div class="PrimaryFooter__wrap__container__subnav__wrapper">
-          <h4 class="uppercase">plan du site</h4>
+          <h5 class="uppercase">plan du site</h5>
           <?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
         </div>
         <div class="PrimaryFooter__wrap__container__subnav__wrapper">
-          <h4 class="uppercase">Nos partenaires</h4>
+          <h5 class="uppercase">Nos partenaires</h5>
         </div>
       </nav>
       <nav class="PrimaryFooter__wrap__container__subnav PrimaryFooter__wrap__container__subnav--newsletter">
         <div class="PrimaryFooter__wrap__container__subnav--newsletter__children">
           <ul>
             <li>
-              <h4 class="uppercase">newsletter</h4>
+              <h5 class="uppercase">newsletter</h5>
             </li>
             <li><p class="PrimaryFooter__wrap__container__subnav--newsletter__children--text">Inscrivez-vous à notre newsletter<br>pour recevoir nos actualités :</p></li>
             <li>
@@ -39,11 +39,11 @@
           </ul>
         </div>
         <div class="PrimaryFooter__wrap__container__subnav--newsletter__children">
-          <h4 class="uppercase">suivez-nous</h4>
+          <h5 class="uppercase">suivez-nous</h5>
         </div>
       </nav>
       <nav class="PrimaryFooter__wrap__container__subnav">
-        <h4 class="uppercase">notre projet</h4>
+        <h5 class="uppercase">notre projet</h5>
         <?php wp_nav_menu( array( 'theme_location' => 'projet') ); ?>
       </nav>
     </div>

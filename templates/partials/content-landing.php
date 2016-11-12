@@ -30,7 +30,7 @@
     </section>
 
     <footer class="post-footer">
-        <?php get_template_part('/comments-link'); ?>
+        <a href="<?php the_permalink(); ?>" class="button post-button">En savoir plus</a>
     </footer>
 
 </article>

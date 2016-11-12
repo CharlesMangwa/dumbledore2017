@@ -39,7 +39,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: .93em;
-    font-weight: 800;
+    font-weight: 700;
   }
 }
 .menu-menu-1-container {
@@ -70,20 +70,34 @@
   // Get fifth li element from menu
   > li:nth-child(5) {
     border: bold solid $color-danger;
+    transition: ease-out 100ms;
 
     a {
       color: $color-danger;
       padding: 30px;
     }
+    &:hover {
+      background: $color-danger;
+      a {
+        color: $color-body;
+      }
+    }
   }
 
   // Get sixth li element from menu
-  > li:nth-child(6) {
+  > li:last-child {
     border: bold solid $color-dumby-blue;
+    transition: ease-out 100ms;
 
     a {
       color: $color-dumby-blue;
       padding: 30px;
+    }
+    &:hover {
+      background: $color-dumby-blue;
+      a {
+        color: $color-body;
+      }
     }
   }
 }

@@ -13,7 +13,7 @@
 </div>
 
 <main class="Homepage__content MainWrapper">
-  <ul class="Homepage__content__section">
+  <ul class="Homepage__content__section Homepage__content__section--first">
     <li class="Homepage__content__section__about">
       <?php if ( have_posts() ) : ?>
 
