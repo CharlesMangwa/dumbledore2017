@@ -23,7 +23,7 @@
           <?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
         </div>
         <div class="PrimaryFooter__wrap__container__subnav__wrapper">
-          <h4 class="uppercase">Nos partenaire</h4>
+          <h4 class="uppercase">Nos partenaires</h4>
         </div>
       </nav>
       <nav class="PrimaryFooter__wrap__container__subnav PrimaryFooter__wrap__container__subnav--newsletter">

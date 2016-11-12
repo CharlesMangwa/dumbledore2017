@@ -11,37 +11,12 @@ html {
     color:       $color-text;
     font-weight: normal;
     font-size:   $font-size-base;
-    font-family: $font-family-base;
+    font-family: $font-family-sans;
     line-height: $line-height-base;
     box-sizing:  border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-h1, .f1 { font-size: $f1; }
-h2, .f2 { font-size: $f2; }
-h3, .f3 { font-size: $f3; }
-h4, .f4 { font-size: $f4; }
-h5, .f5 { font-size: $f5; }
-h6, .f6 { font-size: $f6; }
-
-h1, h2, h3, h4, h5, h6 {
-    color: $color-heading;
-    line-height: $line-height-headings;
-}
-
-h1, h2 {
-    font-family: $font-family-serif;
-}
-
-a {
-    color: $color-link;
-    text-decoration: none;
-
-    &:hover {
-        color: $color-link-hover;
-    }
 }
 
 textarea, input, button {
@@ -74,10 +49,11 @@ img {
     margin-bottom: 30px
 }
 
-.post-title {
-    margin-top: 50px;
-    margin-bottom: 15px;
+.MainWrapper {
+  max-width: 68vw;
+  margin: 0 auto;
 }
+
 
 //
 // Layout

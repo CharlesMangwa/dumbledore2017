@@ -1,7 +1,9 @@
 /**
  * Posts
  */
-
+.content-headings {
+  font-family: $font-family-serif;
+}
 // All posts
 .blog, .single, .archive, .search-results {
 
@@ -11,11 +13,6 @@
 
     .post-header {
         margin-bottom: 20px;
-    }
-
-    .post-title {
-        margin-top: 50px;
-        margin-bottom: 15px;
     }
 
     .comments-link {
