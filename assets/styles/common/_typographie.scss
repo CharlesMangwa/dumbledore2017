@@ -14,7 +14,7 @@ $color-h2: #213958;
 // Font stack
 $font-family-sans:  'Open Sans', Helvetica, Arial, sans-serif;
 $font-family-serif: 'Bodoni', Georgia, serif;
-$font-family-title: 'Agenda', Georgia, serif;
+$font-family-title: 'Agenda', Helvetica, Arial, sans-serif;
 
 // Font default settings
 h1, .f1 { font-size: $f1; }
@@ -37,6 +37,7 @@ h1, h2 {
 a {
     color: $color-link;
     text-decoration: none;
+    font-family: $font-family-title;
 
     &:hover {
         color: $color-link-hover;
