@@ -11,6 +11,9 @@
         <h2 class="post-title">
             <a href="<?php the_permalink(); ?>" class="content-headings f2"><?php the_title(); ?></a>
         </h2>
+        <p class="ornements">
+          d
+        </p>
 
         <?php get_template_part('/post-meta'); ?>
     </header>
@@ -22,7 +25,7 @@
     <section class="post-content">
       <h3 class="post-subtitle"><?php the_field('subtitle') ?></h3>
       <p>
-        <?php the_content(); ?>
+        <?php the_field('intro') ?>
       </p>
     </section>
 
