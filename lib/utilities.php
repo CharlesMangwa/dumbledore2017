@@ -89,4 +89,43 @@ function blujay_custom_image_sizes( $image_sizes ) {
 
     return $image_sizes;
 }
-?>
+
+add_action('init', 'create_custom_post_type_projets');
+
+function create_custom_post_type_projets(){
+
+  $labels = array(
+        'name'               => 'Projets',
+        'singular_name'      => 'Projet',
+        'all_items'          => 'Toutes les projets',
+        'add_new'            => 'Ajouter un projet',
+        'add_new_item'       => 'Ajouter un nouveaux projet',
+        'edit_item'          => "Modifier le projet",
+        'new_item'           => 'Nouveaux projet',
+        'view_item'          => "Voir le projet",
+        'search_items'       => 'Rechercher un projet',
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'projet parente:',
+        'menu_name'          => 'Projets',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments'),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-megaphone',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'projet' )
+    );
+    register_post_type( 'projets', $args );
+}

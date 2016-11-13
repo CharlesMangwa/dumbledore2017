@@ -1,0 +1,98 @@
+.projet {
+  width: 310px;
+  box-shadow: -1px 1px 5px 0px $color-dumby-font;
+  margin: 5px;
+  flex: 1 1 auto;
+}
+
+.projet-header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+  }
+
+  h4 {
+    font-family: $font-family-serif;
+    font-size: 20px;
+    color: $color-body;
+    margin: 0;
+  }
+}
+.projet-header-securite {
+  background-image: url('../images/securite.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projet-header-education {
+  background-image: url('../images/education.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projet-content {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+    font-family: $font-family-sans;
+    font-weight: 800;
+    text-transform: none;
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+
+  p {
+    margin: 0;
+    padding: 10px;
+    max-width: 85%;
+  }
+  .projet-title-securite {
+    color: $color-danger;
+  }
+  .projet-title-education {
+    color: $color-dumby-dblue;
+  }
+}
+
+.projet-footer {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-title;
+  font-weight: 600;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    color: $color-body;
+    letter-spacing: 1.3px;
+  }
+}
+
+.projet-securite {
+  background: $color-danger;
+}
+
+.projet-education {
+  background: $color-dumby-dblue;
+}
