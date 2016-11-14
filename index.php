@@ -67,7 +67,7 @@
       <?php
         $args = array(
           'post_type' => 'projets',
-          'posts_per_page' => 3,
+          'posts_per_page' => 6,
         );
         $the_projets_query = new WP_Query( $args );
 
@@ -80,6 +80,18 @@
           <?php endwhile; ?>
       <?php endif; ?>
     </div>
+  </ul>
+  <ul class="Homepage__content__section Homepage__content__section--fourth">
+    <li class="Homepage__content__section--fourth__heading MainWrapper">
+      <div>
+        <h4>réseaux & actu</h4>
+        <h2>nos actualités</h2>
+      </div>
+    </li>
+    <li>
+      <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
+    </li>
+
   </ul>
 </main>
 
