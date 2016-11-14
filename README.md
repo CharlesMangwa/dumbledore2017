@@ -23,3 +23,9 @@ git clone https://github.com/CharlesMangwa/dumbledore2017.git dumbledore2017 && 
 ### Production
 
 - Run `gulp --production` and that's it!
+
+
+### SETUP Wordpress
+
+- Goto Apparences/menus
+- Créer un menu ->
