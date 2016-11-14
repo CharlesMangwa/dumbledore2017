@@ -5,12 +5,16 @@
 ?>
 
 <?php get_header(); ?>
-<div class="Homepage">
+<!-- <div class="Homepage">
   <section class="Homepage__heading">
 
   </section>
 
 </div>
+
+Ca reste tout le temps, pour toutes les pages qu'on inté.
+Ca n'est jamais remplacé. 
+-->
 
 <main class="Homepage__content MainWrapper">
   <ul class="Homepage__content__section">

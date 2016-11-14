@@ -89,4 +89,45 @@ function blujay_custom_image_sizes( $image_sizes ) {
 
     return $image_sizes;
 }
+
+add_action('init', 'create_custom_post_type_abouts');
+
+function create_custom_post_type_abouts(){
+
+  $labels = array(
+        'name'               => 'Abouts',
+        'singular_name'      => 'About',
+        'all_items'          => 'Toutes les abouts',
+        'add_new'            => 'Ajouter un about',
+        'add_new_item'       => 'Ajouter un nouveaux about',
+        'edit_item'          => "Modifier le about",
+        'new_item'           => 'Nouveaux about',
+        'view_item'          => "Voir le about",
+        'search_items'       => 'Rechercher un about',
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'about parente:',
+        'menu_name'          => 'Abouts',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => true,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments'),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-megaphone',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'about' )
+    );
+    register_post_type( 'abouts', $args );
+}
+
 ?>

@@ -12,5 +12,5 @@
             "assets/styles/main.scss"
         ]
     },
-    "devUrl": "localhost:80"
+    "devUrl": "localhost:8888/projet-wp-trim1"
 }
