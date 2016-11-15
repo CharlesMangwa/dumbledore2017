@@ -96,9 +96,9 @@ add_action('init', 'create_custom_post_type_projets');
 function create_custom_post_type_projets(){
 
   $labels = array(
-        'name'               => 'Projets',
+        'name'               => 'Projet',
         'singular_name'      => 'Projet',
-        'all_items'          => 'Toutes les projets',
+        'all_items'          => 'Tout les projets',
         'add_new'            => 'Ajouter un projet',
         'add_new_item'       => 'Ajouter un nouveaux projet',
         'edit_item'          => "Modifier le projet",
@@ -108,13 +108,13 @@ function create_custom_post_type_projets(){
         'not_found'          => 'Pas de résultat',
         'not_found_in_trash' => 'Pas de résultat',
         'parent_item_colon'  => 'projet parente:',
-        'menu_name'          => 'Projets',
+        'menu_name'          => 'Projet',
     );
 
     $args = array(
         'labels'              => $labels,
         'hierarchical'        => false,
-        'supports'            => array( 'title','editor', 'excerpt'),
+        'supports'            => array( 'title','editor', 'excerpt', 'thumbnail'),
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
@@ -126,7 +126,7 @@ function create_custom_post_type_projets(){
         'has_archive'         => false,
         'query_var'           => true,
         'can_export'          => true,
-        'rewrite'             => array( 'slug' => 'projets' )
+        'rewrite'             => array( 'slug' => 'projet' )
     );
     register_post_type( 'projets', $args );
 }
