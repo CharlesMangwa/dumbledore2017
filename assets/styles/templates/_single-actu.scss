@@ -1,10 +1,21 @@
+/*
+*
+* index.php style
+*
+*/
+
+// MAIN //
+//------------------------------------o
 .SingleActu {
   display: flex;
   justify-content: center;
   background: $color-body;
 
 }
-
+.SingleActu__content {
+  z-index: 5;
+}
+// Thumbnail
 .SingleActu__thumbnail {
   position: absolute;
   z-index: 1;

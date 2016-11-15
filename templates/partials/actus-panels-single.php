@@ -12,5 +12,15 @@
           <h5>d</h5>
           <?php the_content(); ?>
         </div>
+        <div class="actu-single-networks">
+          <ul class="actu-single-firstList">
+            <a href="#"><li class="button">partager<span><img src="<?php bloginfo( 'template_url' )?>/assets/images/facebook-icon.svg" alt="partager sur facebook" /></span></li></a>
+            <a href="#"><li class="button">tweeter<span><img src="<?php bloginfo( 'template_url' )?>/assets/images/twitter-icon.svg" alt="partager sur twitter" /></span></li></a>
+            <a href="#"><li class="button">email<span><img src="<?php bloginfo( 'template_url' )?>/assets/images/mail-icon.svg" alt="partager sur facebook" /></span></li></a>
+          </ul>
+          <ul class="actu-single-secondList">
+            <a href="#"><li class="button">retour</li></a>
+          </ul>
+        </div>
     </section>
 </article>
