@@ -86,12 +86,15 @@
         <h4>réseaux & actu</h4>
         <h2>nos actualités</h2>
       </div>
+      <div class="Homepage__content__section--fourth__heading__buton">
+        <a href="<?php echo get_page_link(87); ?>" class="Homepage__content__section--fourth__heading__buton--modifier button">Tout les articles</a>
+      </div>
     </li>
     <li class="Homepage__content__section--fourth__actuTop MainWrapper">
       <?php
         $args = array(
-          'post_type' => 'actus',
-          'posts_per_page' => 4,
+          'post_type' => 'actu_first',
+          'posts_per_page' => 1,
         );
         $the_actu_query = new WP_Query( $args );
 
@@ -100,10 +103,7 @@
        <?php if ( $the_actu_query->have_posts() ) : ?>
            <?php while ( $the_actu_query->have_posts()) : $the_actu_query->the_post(); ?>
              <?php
-               $focus = get_field('focus');
-               if ($focus == 1) {
                    get_template_part( 'templates/partials/actus-panels');
-               }
               ?>
            <?php endwhile; ?>
        <?php endif; ?>
@@ -115,7 +115,7 @@
       <?php
         $args = array(
           'post_type' => 'actus',
-          'posts_per_page' => 4,
+          'posts_per_page' => 3,
         );
         $the_actu_bot_query = new WP_Query( $args );
 
@@ -124,10 +124,7 @@
        <?php if ( $the_actu_bot_query->have_posts() ) : ?>
            <?php while ( $the_actu_bot_query->have_posts()) : $the_actu_bot_query->the_post(); ?>
              <?php
-               $focus = get_field('focus');
-               if ($focus != 1) {
                    get_template_part( 'templates/partials/actus-panels-bottom');
-               }
               ?>
            <?php endwhile; ?>
        <?php endif; ?>

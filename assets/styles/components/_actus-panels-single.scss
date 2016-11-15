@@ -1,37 +1,40 @@
-.content-actu-bottom {
+.content-actu-single {
   display: flex;
   justify-content: flex-start;
-  background: #FFF;
-  align-items: space-between;
-  margin: 5px;
-  box-shadow: -1px 1px 5px 0px $color-dumby-font;
-  width: 310px;
+  background: $color-body;
+  align-items: center;
+  z-index: 10;
+  margin: 300px 0;
+  max-width: 75vw;
+  // box-shadow: -1px 1px 5px 0px $color-dumby-font;
   flex: 1 1 auto;
   // Responsive
-  @media only screen and (max-width: 868px) {
-    max-width: 100%;
+  @media only screen and (max-width: 1100px) {
+    max-width: 100vw;
     justify-content: flex-start;
     flex-direction: column;
   }
   h4 {
     margin: 0 0 10px 0;
-    font-family: $font-family-sans;
+    font-family: $font-family-subtitle;
     font-size: 12px;
-    color: $color-danger;
+    color: $color-dumby-grey;
     font-weight: 600;
   }
   h2 {
-    font-size: 20px;
+    font-size: 26px;
+    color: $color-dumby-dblue;
   }
   h5 {
     font-family: $ornement;
-    margin: 10px 0;
-    font-size: 20px;
-    color: $color-dumby-dblue;
+    margin: 20px 0;
+    font-size: 30px;
+    color: $color-danger;
   }
   p {
     margin: 0;
     font-size: 12px;
+    text-align: justify;
   }
   a {
     font-size: 12px;
@@ -44,10 +47,10 @@
   }
 }
 
-.actu-bottom-padding {
-  padding: 40px;
+.actu-single-padding {
+  padding: 50px;
 }
-.actu-bottom-content {
+.actu-single-content {
   position: relative;
   top: 0;
   display: flex;

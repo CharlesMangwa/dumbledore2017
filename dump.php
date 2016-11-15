@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: actus
+*/
+?>
 <div class="page-actu">
 
 

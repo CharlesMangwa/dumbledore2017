@@ -12,5 +12,5 @@
             "assets/styles/main.scss"
         ]
     },
-    "devUrl": "http://localhost/CloudStation/dev/wordpress/"
+    "devUrl": "localhost:80"
 }

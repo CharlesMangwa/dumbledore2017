@@ -126,7 +126,7 @@ function create_custom_post_type_projets(){
         'has_archive'         => false,
         'query_var'           => true,
         'can_export'          => true,
-        'rewrite'             => array( 'slug' => 'projet' )
+        'rewrite'             => array( 'slug' => 'projets' )
     );
     register_post_type( 'projets', $args );
 }
@@ -142,7 +142,7 @@ function create_custom_post_type_actu(){
         'all_items'          => 'Toutes les actus',
         'add_new'            => 'Ajouter une actu',
         'add_new_item'       => 'Ajouter une nouvelle actu',
-        'edit_item'          => "Modifier l'actu'",
+        'edit_item'          => "Modifier l'actu",
         'new_item'           => 'Nouvelle actu',
         'view_item'          => "Voir le projet",
         'search_items'       => 'Rechercher un projet',
@@ -167,7 +167,48 @@ function create_custom_post_type_actu(){
         'has_archive'         => false,
         'query_var'           => true,
         'can_export'          => true,
-        'rewrite'             => array( 'slug' => 'actu' )
+        'rewrite'             => array( 'slug' => 'actus')
     );
     register_post_type( 'actus', $args );
+}
+
+// Actu
+add_action('init', 'create_custom_post_type_actu_first');
+
+function create_custom_post_type_actu_first(){
+
+  $labels = array(
+        'name'               => 'Actus_first',
+        'singular_name'      => 'Actu_first',
+        'all_items'          => 'Toutes les actus_first',
+        'add_new'            => 'Ajouter une actu_first',
+        'add_new_item'       => 'Ajouter une nouvelle actu_first',
+        'edit_item'          => "Modifier l'actu_first",
+        'new_item'           => 'Nouvelle actu_first',
+        'view_item'          => "Voir l'actu_first",
+        'search_items'       => 'Rechercher une actu_first',
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'Actu_first parente:',
+        'menu_name'          => 'Actus_first',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments'),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-star-filled',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'actus-first' ),
+    );
+    register_post_type( 'actu_first', $args );
 }
