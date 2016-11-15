@@ -1,11 +1,13 @@
 .about-content {
     background-color: #f9f9f9;
+    height: 100%;
 }
 
 // -- container about page --
 .about-container {
     background-color: #f9f9f9;
-    margin: 0 135px 0 135px;
+    width: 80.34vw;
+    margin: auto;
     position: relative;
     top: -135px;
 }
@@ -19,15 +21,13 @@
 // -- Header about page --
 .about-header {
     width: 986px;
-    // margin-left: 100px;
-    // margin-bottom: 92px;
     margin: 0 0 92px 100px;
     padding-top: 66px;
 
     .about-subtitle {
         font-family: $font-family-subtitle;
         font-size: 16px;
-        color: $color-text-about;
+        color: $color-about-text;
         text-transform: uppercase;
         margin: 0;
     }
@@ -43,7 +43,7 @@
     .about-heading.intro {
         font-family: $font-family-sans;
         font-size: 14px;
-        color: $color-text-about;
+        color: $color-about-text;
         text-transform: none;
     }
 }
@@ -51,19 +51,57 @@
 // -- about article style --
 
 .about {
-    margin-left: 60px;
-    height: 414px;
+    margin: 0 0 135px 60px;
+    height: 363px;
+    width: 71.52vw;
+    display: flex;
+    position: relative;
 
     .about-image {
-        height: 380px;
-        width: 510px;
-        z-index: 2;
+        flex: 0.5;
+        position: absolute;
+        top: 33px;
     }
 
-    .about-article__content {
-        background-color: $color-body;
-        margin-left: 135px;
+    .about-article__container {
         display: flex;
-        z-index: 1;
+        justify-content: center;
+        align-items: flex-start;;
+        background: #FFFFFF;
+        margin-left: 135px;
+        padding: 20px 0 0 412px;
+        flex: 1;
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+
+        .about-article__container {
+            margin: 0 135px 0 0;
+            padding: 20px 412px 0 50px;
+        }
+    }
+}
+
+.about-article__content {
+    width: 100%;
+    padding-right: 50px;
+    height: 250px;
+
+    .about-title {
+        font-family: $font-family-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .ornements {
+        color: $color-dumby-dblue;
+    }
+
+    .about-work {
+        font-family: $font-family-sans;
+        font-size: 16px;
+        color: $color-about-text;
     }
 }

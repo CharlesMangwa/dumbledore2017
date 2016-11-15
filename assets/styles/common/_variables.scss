@@ -7,23 +7,24 @@
  */
 
 // Base colors
-$color-body:        #ffffff;
-$color-text:        #444444;
-$color-text-about:  #242424;
-$color-heading:     #444444;
-$color-link:        #414141;
-$color-link-hover:  darken($color-link, 10%);
-$color-success:     #5cb85c;
-$color-info:        #5bc0de;
-$color-warning:     #f0ad4e;
-$color-danger:      #d81128;
-$color-border:      #979797;
-$color-dumby-blue:  #004090;
-$color-dumby-dblue: #213958;
-$color-dumby-grey:  #252525;
-$color-dumby-white: #eaeaea;
-$color-dumby-font:  #a3a3a3;
-$color-dumby-red:   #d81128;
+$color-body:          #ffffff;
+$color-text:          #444444;
+$color-about-text:    #242424;
+$color-heading:       #444444;
+$color-about-heading: #060606;
+$color-link:          #414141;
+$color-link-hover:    darken($color-link, 10%);
+$color-success:       #5cb85c;
+$color-info:          #5bc0de;
+$color-warning:       #f0ad4e;
+$color-danger:        #d81128;
+$color-border:        #979797;
+$color-dumby-blue:    #004090;
+$color-dumby-dblue:   #213958;
+$color-dumby-grey:    #252525;
+$color-dumby-white:   #eaeaea;
+$color-dumby-font:    #a3a3a3;
+$color-dumby-red:     #d81128;
 
 // Custom colors
 $color-border:      #dddddd;

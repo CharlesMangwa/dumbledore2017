@@ -35,29 +35,21 @@
                       $loop = new WP_Query( $args );
                      ?>
 
-                        <!-- echo '<div class="about">';
-                        echo '<div class="about-image">'. get_the_post_thumbnail( $id ).'</div>';
-                        echo '<div class="about-title">'. the_field('about-article-title').'</div>';
-                        echo '<p class="ornements-blue">'. "d".'</p>';
-                        echo '<div class="about-work">'. the_field('about-article-content').'</div>';
-                        echo '</div>';
-                      endif; -->
-
-
                     <?php  if( $loop->have_posts() ): ?>
                     <?php while( $loop->have_posts() ): $loop->the_post(); global $post; ?>
 
                         <div class="about">
-                            <div class="about_background"></div>
                             <div class="about-image">
                                 <?php the_post_thumbnail(); ?>
                             </div>
-                            <div class="about-article__content">
-                                <h3 class="about-title"><?php the_field('about-article-title'); ?></h3>
-                                <div class="ornements">d</div>
-                                <p class="about-work">
-                                    <?php the_field('about-article-content'); ?>
-                                </p>
+                            <div class="about-article__container">
+                                <div class="about-article__content">
+                                    <h3 class="about-title"><?php the_field('about-article-title'); ?></h3>
+                                    <div class="ornements">d</div>
+                                    <p class="about-work">
+                                        <?php the_field('about-article-content'); ?>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
