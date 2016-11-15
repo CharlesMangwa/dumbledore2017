@@ -1,0 +1,68 @@
+.about-content {
+    background-color: #f9f9f9;
+}
+
+// -- container about page --
+.about-container {
+    background-color: #f9f9f9;
+    margin: 0 135px 0 135px;
+    position: relative;
+    top: -135px;
+}
+
+// -- thumbnail top page --
+.about-featured-image img{
+    height: 58.222%;
+    width: 100%;
+}
+
+// -- Header about page --
+.about-header {
+    width: 986px;
+    // margin-left: 100px;
+    // margin-bottom: 92px;
+    margin: 0 0 92px 100px;
+    padding-top: 66px;
+
+    .about-subtitle {
+        font-family: $font-family-subtitle;
+        font-size: 16px;
+        color: $color-text-about;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .about-heading {
+        font-family: $font-family-serif;
+        font-size: 30px;
+        color: $color-dumby-dblue;
+        text-transform: uppercase;
+        margin: 25px 35px 25px 0;
+    }
+
+    .about-heading.intro {
+        font-family: $font-family-sans;
+        font-size: 14px;
+        color: $color-text-about;
+        text-transform: none;
+    }
+}
+
+// -- about article style --
+
+.about {
+    margin-left: 60px;
+    height: 414px;
+
+    .about-image {
+        height: 380px;
+        width: 510px;
+        z-index: 2;
+    }
+
+    .about-article__content {
+        background-color: $color-body;
+        margin-left: 135px;
+        display: flex;
+        z-index: 1;
+    }
