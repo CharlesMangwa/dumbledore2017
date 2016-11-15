@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: projets
+Template Name: boutique
 */
 ?>
 <?php get_header(); ?>

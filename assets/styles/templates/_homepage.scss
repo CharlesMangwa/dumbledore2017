@@ -1,8 +1,18 @@
+/*
+*
+* index.php style
+*
+*/
+
+// MAIN //
+//------------------------------------o
 .Homepage {
   position: relative;
   display: flex;
 }
 
+// HEADING SLIDER //
+//------------------------------------o
 .Homepage__heading {
   width: 100vw;
   height: 75vh;
@@ -12,6 +22,8 @@
   background-position: center;
 }
 
+// EACH SECTION STYLE //
+//------------------------------------o
 .Homepage__content__section {
   padding: 0;
   > ul, li {
@@ -19,6 +31,8 @@
   }
 }
 
+// SECTION 1 //
+//------------------------------------o
 .Homepage__content__section--first {
   display: flex;
   flex-flow: row wrap;
@@ -49,7 +63,7 @@
     }
   }
 }
-
+// Left part
 .Homepage__content__section__about {
   display: flex;
   justify-content: center;
@@ -71,7 +85,7 @@
     max-width: 90%;
   }
 }
-
+// Right part
 .Homepage__content__section__dunno {
   position: relative;
   background-image: url('../images/about-dumby.png');
@@ -129,6 +143,8 @@
   }
 }
 
+// SECTION 2 //
+//------------------------------------o
 .Homepage__content__section--second {
   margin: 0;
   height: 400px;
@@ -191,13 +207,15 @@
     font-weight: 600;
     color: $color-dumby-white;
     border: large solid $color-dumby-dblue;
-
     padding: 17px 40px 18px 40px;
   }
 }
 
+// SECTION 3 //
+//------------------------------------o
 .Homepage__content__section--third {
-  &__firstChild {
+  // First part = text
+  &__firstchild {
     margin: 120px 0 80px 0;
     max-width: 55%;
     // Responsive
@@ -212,7 +230,8 @@
       max-width: 90%;
     }
   }
-  &__secondChild {
+  // Second part = tiles
+  &__secondchild {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -220,14 +239,16 @@
     align-content: stretch;
     margin: 0 0 100px 0;
 
-
     article {
       margin-top: 20px;
     }
   }
 }
+
+// SECTION 4 //
+//------------------------------------o
 .Homepage__content__section--fourth {
-  background: #fff;
+  background: #FFFFFF;
   background-image: url('../images/background-actu.png');
   background-repeat: no-repeat;
   background-position: center 60px;
@@ -239,6 +260,7 @@
     margin: 0;
   }
 }
+// Section heading -> text part
 .Homepage__content__section--fourth__heading {
   display: flex;
   flex-direction: row;
@@ -251,42 +273,15 @@
     flex-direction: column;
   }
 }
-.Homepage__content__section--fourth__content {
-}
+// Pinned actu
 .Homepage__content__section--fourth__actuTop {
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
   justify-content: flex-end;
 }
-.ctf-tweet-date {
-  color: $color-danger !important;
-}
-.ctf-tweets {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  width: 100%;
 
-}
-
-.ctf-item {
-  background: $color-body;
-  width: 310px;
-  // height: 210px;
-  padding: 40px !important;
-  margin: 5px;
-  border: none !important;
-  box-shadow: -1px 1px 5px 0px $color-dumby-font;
-  flex: 1 1 auto;
-
-}
-
-.ctf-out-of-tweets {
-  display: none !important;
-}
-
+// Other actus
 .Homepage__content__section--fourth__actuBot {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -294,6 +289,8 @@
   flex-flow: row wrap;
 }
 
+// SECTION 5 //
+//------------------------------------o
 .Homepage__content__section--fifth {
   margin: 0;
 }
