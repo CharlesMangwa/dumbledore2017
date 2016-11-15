@@ -67,14 +67,13 @@
       <?php
         $args = array(
           'post_type' => 'projets',
-          'posts_per_page' => 6,
+          'posts_per_page' => 3,
         );
         $the_projets_query = new WP_Query( $args );
 
        ?>
 
       <?php if ( $the_projets_query->have_posts() ) : ?>
-
           <?php while ( $the_projets_query->have_posts() ) : $the_projets_query->the_post(); ?>
             <?php get_template_part( 'templates/partials/panels');?>
           <?php endwhile; ?>
@@ -88,10 +87,54 @@
         <h2>nos actualités</h2>
       </div>
     </li>
-    <li>
+    <li class="Homepage__content__section--fourth__actuTop MainWrapper">
+      <?php
+        $args = array(
+          'post_type' => 'actus',
+          'posts_per_page' => 4,
+        );
+        $the_actu_query = new WP_Query( $args );
+
+       ?>
+
+       <?php if ( $the_actu_query->have_posts() ) : ?>
+           <?php while ( $the_actu_query->have_posts()) : $the_actu_query->the_post(); ?>
+             <?php
+               $focus = get_field('focus');
+               if ($focus == 1) {
+                   get_template_part( 'templates/partials/actus-panels');
+               }
+              ?>
+           <?php endwhile; ?>
+       <?php endif; ?>
+    </li>
+    <li class="Homepage__content__section--fourth__content">
       <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
     </li>
+    <li class="Homepage__content__section--fourth__actuBot MainWrapper">
+      <?php
+        $args = array(
+          'post_type' => 'actus',
+          'posts_per_page' => 4,
+        );
+        $the_actu_bot_query = new WP_Query( $args );
 
+       ?>
+
+       <?php if ( $the_actu_bot_query->have_posts() ) : ?>
+           <?php while ( $the_actu_bot_query->have_posts()) : $the_actu_bot_query->the_post(); ?>
+             <?php
+               $focus = get_field('focus');
+               if ($focus != 1) {
+                   get_template_part( 'templates/partials/actus-panels-bottom');
+               }
+              ?>
+           <?php endwhile; ?>
+       <?php endif; ?>
+    </li>
+  </ul>
+  <ul class="Homepage__content__section Homepage__content__section--fifth">
+    <?php echo do_shortcode('[ank_google_map]'); ?>
   </ul>
 </main>
 

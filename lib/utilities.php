@@ -90,6 +90,7 @@ function blujay_custom_image_sizes( $image_sizes ) {
     return $image_sizes;
 }
 
+// Project
 add_action('init', 'create_custom_post_type_projets');
 
 function create_custom_post_type_projets(){
@@ -113,7 +114,7 @@ function create_custom_post_type_projets(){
     $args = array(
         'labels'              => $labels,
         'hierarchical'        => false,
-        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments'),
+        'supports'            => array( 'title','editor', 'excerpt'),
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
@@ -128,4 +129,45 @@ function create_custom_post_type_projets(){
         'rewrite'             => array( 'slug' => 'projet' )
     );
     register_post_type( 'projets', $args );
+}
+
+// Actu
+add_action('init', 'create_custom_post_type_actu');
+
+function create_custom_post_type_actu(){
+
+  $labels = array(
+        'name'               => 'Actus',
+        'singular_name'      => 'Actu',
+        'all_items'          => 'Toutes les actus',
+        'add_new'            => 'Ajouter une actu',
+        'add_new_item'       => 'Ajouter une nouvelle actu',
+        'edit_item'          => "Modifier l'actu'",
+        'new_item'           => 'Nouvelle actu',
+        'view_item'          => "Voir le projet",
+        'search_items'       => 'Rechercher un projet',
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'Actu parente:',
+        'menu_name'          => 'Actus',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments'),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-tickets',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'actu' )
+    );
+    register_post_type( 'actus', $args );
 }

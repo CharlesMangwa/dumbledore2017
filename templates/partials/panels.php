@@ -12,7 +12,7 @@
     </header>
 
     <section class="projet-featured-image">
-        <?php the_post_thumbnail( 'large' ); ?>
+        <?php the_post_thumbnail(); ?>
     </section>
 
     <section class="projet-content">

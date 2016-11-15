@@ -27,6 +27,7 @@
   // Responsive
   @media only screen and (max-width: 1100px) {
     flex-flow: column;
+    text-align: center;
   }
 
   li:first-child {
@@ -65,6 +66,10 @@
 
 .Homepage__content__section__about__wrapper {
   max-width: 60%;
+  // Responsive
+  @media only screen and (max-width: 868px) {
+    max-width: 90%;
+  }
 }
 
 .Homepage__content__section__dunno {
@@ -197,8 +202,14 @@
     max-width: 55%;
     // Responsive
     @media only screen and (max-width: 1100px) {
+      margin: 120px auto;
+      text-align: center;
+    }
+    // Responsive
+    @media only screen and (max-width: 868px) {
       text-align: center;
       margin: 120px auto 80px;
+      max-width: 90%;
     }
   }
   &__secondChild {
@@ -209,16 +220,6 @@
     align-content: stretch;
     margin: 0 0 100px 0;
 
-    // Responsive
-    @media only screen and (max-width: 1100px) {
-      // flex-direction: column;
-    }
-
-    // Responsive
-    @media only screen and (max-width: 868px) {
-      justify-content: center;
-      flex-flow: column wrap;
-    }
 
     article {
       margin-top: 20px;
@@ -227,11 +228,66 @@
 }
 .Homepage__content__section--fourth {
   background: #fff;
+  background-image: url('../images/background-actu.png');
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: cover;
+  z-index: 1;
+  padding: 80px 0;
   margin: 0;
   h2 {
     margin: 0;
   }
 }
 .Homepage__content__section--fourth__heading {
-  margin-bottom: 40px;
+  // Responsive
+  @media only screen and (max-width: 1100px) {
+    text-align: center;
+  }
+}
+.Homepage__content__section--fourth__content {
+}
+.Homepage__content__section--fourth__actuTop {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+.ctf-tweet-date {
+  color: $color-danger !important;
+}
+.ctf-tweets {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  width: 100%;
+
+}
+
+.ctf-item {
+  background: $color-body;
+  width: 310px;
+  // height: 210px;
+  padding: 40px !important;
+  margin: 5px;
+  border: none !important;
+  box-shadow: -1px 1px 5px 0px $color-dumby-font;
+  flex: 1 1 auto;
+
+}
+
+.ctf-out-of-tweets {
+  display: none !important;
+}
+
+.Homepage__content__section--fourth__actuBot {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Homepage__content__section--fifth {
+  margin: 0;
 }
