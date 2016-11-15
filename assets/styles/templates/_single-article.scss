@@ -1,0 +1,52 @@
+.single-post__content{
+    max-width: 75vw;
+    margin: 0 auto;
+    background: #ffffff;
+    transform:translateY(-15vw);
+    padding: 5vw;
+}
+
+.single__actions{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.single__button{
+    font-family: 'Agenda';
+    font-weight: 600;
+    font-size: 14px;
+    width: 12vw;
+    height: 35px;
+    border: 3px solid red;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.single__button svg{
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.single__facebook{
+    border-color: #213958;
+    color : #213958;
+}
+
+.single__twitter{
+    border-color: #55acee;
+    color: #55acee;
+}
+
+.single__email{
+    border-color: #d81128;
+    color: #d81128;
+}
+
+.single__back{
+    border-color: #b0b0b0;
+    color : #b0b0b0;
+    float: right;
+    align-self: flex-end;
+}
