@@ -27,6 +27,15 @@
   box-shadow: -1px 1px 5px 0 $color-dumby-font;
   flex: 1 1 auto;
 }
+
+.ctf-tweet-text {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
+  -moz-osx-font-smoothing: greyscale;
+  -webkit-font-smoothing: antialiased;
+}
+
 .ctf-out-of-tweets {
   display: none !important;
 }

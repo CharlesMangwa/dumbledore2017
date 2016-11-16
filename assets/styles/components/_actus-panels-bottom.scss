@@ -53,6 +53,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  p {
+    font-size: 12px;
+    -moz-osx-font-smoothing: greyscale;
+    -webkit-font-smoothing: antialiased;
+  }
   img {
     position: relative;
     top: 0;
