@@ -41,8 +41,11 @@
   }
   p {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 28px;
     text-align: justify;
+    -moz-osx-font-smoothing: greyscale;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
