@@ -172,7 +172,7 @@ function create_custom_post_type_actu(){
     register_post_type( 'actus', $args );
 }
 
-// Actu
+// Actu first
 add_action('init', 'create_custom_post_type_actu_first');
 
 function create_custom_post_type_actu_first(){
@@ -211,4 +211,45 @@ function create_custom_post_type_actu_first(){
         'rewrite'             => array( 'slug' => 'actus-first' ),
     );
     register_post_type( 'actu_first', $args );
+}
+
+// About
+add_action('init', 'create_custom_post_type_apropos');
+
+function create_custom_post_type_apropos(){
+
+  $labels = array(
+        'name'               => 'A propos',
+        'singular_name'      => 'A propos',
+        'all_items'          => 'Toutes les a-propos',
+        'add_new'            => 'Ajouter une a-propos',
+        'add_new_item'       => 'Ajouter une nouvelle a-propos',
+        'edit_item'          => "Modifier a-propos",
+        'new_item'           => 'Nouvelle a-propos',
+        'view_item'          => "Voir a-propos",
+        'search_items'       => 'Rechercher une a-propos',
+        'not_found'          => 'Pas de résultat',
+        'not_found_in_trash' => 'Pas de résultat',
+        'parent_item_colon'  => 'a-propos parente:',
+        'menu_name'          => 'a-propos',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'supports'            => array( 'title','thumbnail','editor', 'excerpt', 'comments'),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-star-filled',
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => false,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => array( 'slug' => 'a-propos' ),
+    );
+    register_post_type( 'a-propos', $args );
 }

@@ -1,0 +1,8 @@
+.AboutFlex {
+  display: flex;
+  flex-flow: row wrap;
+}
+.AboutImage {
+  object-fit: cover;
+  min-height: 100%;
+}

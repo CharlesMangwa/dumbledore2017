@@ -12,7 +12,7 @@
   background: $color-body;
   align-items: center;
   z-index: 10;
-  margin: 300px 0;
+  margin: 300px 0 80px 0;
   max-width: 75vw;
   // box-shadow: -1px 1px 5px 0px $color-dumby-font;
   flex: 1 1 auto;
@@ -103,5 +103,18 @@
       font-size: 12px;
       padding: 7px 30px;
     }
+  }
+}
+
+.AboutUl {
+  padding: 0;
+  h2 {
+    margin: 0;
+  }
+
+  h5{
+    margin: 20px 0;
+    font-size: 20px;
+    color: $color-dumby-dblue;
   }
 }
