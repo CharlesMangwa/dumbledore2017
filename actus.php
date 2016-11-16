@@ -8,8 +8,8 @@ Template Name: actus
   <ul class="Homepage__content__section Homepage__content__section--fourth">
     <li class="Homepage__content__section--fourth__heading MainWrapper FixDegueulasse">
       <div>
-        <h4>réseaux & actu</h4>
-        <h2>toutes nos actualités</h2>
+        <h4>réseaux & actus</h4>
+        <h2>Nos actualités</h2>
 
       </div>
     </li>

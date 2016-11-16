@@ -14,10 +14,10 @@
         </div>
         <div class="actu-single-networks">
           <?php
-          get_template_part( 'templates/partials/networks');
+            get_template_part( 'templates/partials/networks');
           ?>
           <ul>
-            <a href="#"><li class="button">retour</li></a>
+            <a href="<?php echo get_site_url(); ?>"><li class="button">retour</li></a>
           </ul>
         </div>
     </section>

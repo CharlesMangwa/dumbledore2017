@@ -18,7 +18,7 @@
 
     <footer class="projet-footer projet-<?php the_field('label') ?>">
         <a href="<?php the_permalink(); ?>" class="projet-button">
-          <div><p>En savoir plus</p></div>
+          <div><p><?= the_ID(); ?>En savoir plus</p></div>
         </a>
     </footer>
 

@@ -29,7 +29,7 @@
     </section>
 
     <footer class="post-footer">
-        <a href="<?php echo get_page_link(99); ?>" class="button post-button">En savoir plus</a>
+        <a href="<?php echo the_permalink(7); ?>" class="button post-button">En savoir plus</a>
     </footer>
 
 </article>

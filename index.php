@@ -91,11 +91,11 @@
     <ul class="Homepage__content__section Homepage__content__section--fourth">
       <li class="Homepage__content__section--fourth__heading MainWrapper">
         <div>
-          <h4>réseaux & actu</h4>
+          <h4>réseaux & actus</h4>
           <h2>nos actualités</h2>
         </div>
         <div class="Homepage__content__section--fourth__heading__buton">
-          <a href="<?php echo get_page_link(87); ?>" class="Homepage__content__section--fourth__heading__buton--modifier button">Tous les articles</a>
+          <a href="<?php echo get_page_link(5); ?>" class="Homepage__content__section--fourth__heading__buton--modifier button">Tous les articles</a>
         </div>
       </li>
       <li class="Homepage__content__section--fourth__actuTop MainWrapper">
