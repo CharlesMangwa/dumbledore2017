@@ -106,16 +106,32 @@
     transition: all ease-out 300ms;
 
     a {
+      position: relative;
+      z-index: 1;
       color: $color-danger;
       padding: 30px;
     }
+
+    a:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 29%;
+      width: 0%;
+      height: 40%;
+      background-color: $color-danger;
+      z-index: -1;
+      transform-origin: 0% 100%;
+      transition: all ease-out 300ms;
+    }
+
     &:hover {
-      background: $color-danger;
       a {
         color: $color-body;
       }
       a:before {
-        visibility: hidden;
+        width: 100%;
+        transition: width 0.3s;
       }
     }
   }
@@ -126,18 +142,35 @@
     transition: ease-out 100ms;
 
     a {
+      position: relative;
+      z-index: 1;
       color: $color-dumby-blue;
       padding: 30px;
     }
+
+    a:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 29%;
+      width: 0%;
+      height: 40%;
+      background-color: $color-dumby-blue;
+      z-index: -1;
+      transform-origin: 0% 100%;
+      transition: all ease-out 300ms;
+    }
+
     &:hover {
-      background: $color-dumby-blue;
       a {
         color: $color-body;
       }
       a:before {
-        visibility: hidden;
+        width: 100%;
+        transition: width 0.3s;
       }
     }
+
   }
 }
 .PrimaryHeader__wrap__navbar__logo  {
