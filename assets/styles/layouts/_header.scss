@@ -23,6 +23,10 @@
   width: 70%;
   margin: 0 auto;
 
+  > a {
+    display: flex;
+  }
+
   // Responsive
   @media only screen and (max-width: 868px) {
     flex-flow: column wrap;

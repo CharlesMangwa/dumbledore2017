@@ -19,7 +19,7 @@ Template Name: projet
       </ul>
     </li>
   </ul>
-  <ul class="ProjetTemaplate__projects MainWrapper">
+  <ul class="ProjetTemplate__projects MainWrapper">
     <?php
       $args = array(
         'post_type' => 'projets',
@@ -29,7 +29,7 @@ Template Name: projet
      ?>
     <?php if ( $the_projets_query->have_posts() ) : ?>
         <?php while ( $the_projets_query->have_posts() ) : $the_projets_query->the_post(); ?>
-          <?php get_template_part( 'templates/partials/panels');?>
+          <?php get_template_part( 'templates/partials/panels-projet');?>
         <?php endwhile; ?>
     <?php endif; ?>
   </ul>

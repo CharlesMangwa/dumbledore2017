@@ -6,10 +6,11 @@ Template Name: actus
 <?php get_header(); ?>
 <main class="Actus">
   <ul class="Homepage__content__section Homepage__content__section--fourth">
-    <li class="Homepage__content__section--fourth__heading MainWrapper">
+    <li class="Homepage__content__section--fourth__heading MainWrapper FixDegueulasse">
       <div>
         <h4>réseaux & actu</h4>
         <h2>toutes nos actualités</h2>
+
       </div>
     </li>
     <li class="Homepage__content__section--fourth__actuTop MainWrapper">

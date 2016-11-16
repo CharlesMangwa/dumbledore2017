@@ -37,6 +37,31 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.projet-header-emploi {
+  background-image: url('../images/emploi.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projet-header-justice {
+  background-image: url('../images/justice.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projet-header-sante {
+  background-image: url('../images/sante.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projet-header-culture {
+  background-image: url('../images/culture.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .projet-content {
   height: 220px;
@@ -65,6 +90,18 @@
   .projet-title-education {
     color: $color-dumby-dblue;
   }
+  .projet-title-emploi {
+    color: $color-dumby-emploi;
+  }
+  .projet-title-justice {
+    color: $color-dumby-justice;
+  }
+  .projet-title-sante {
+    color: $color-dumby-sante;
+  }
+  .projet-title-culture {
+    color: $color-dumby-culture;
+  }
 }
 
 .projet-footer {
@@ -92,7 +129,21 @@
 .projet-securite {
   background: $color-danger;
 }
-
 .projet-education {
   background: $color-dumby-dblue;
+}
+.projet-emploi {
+  background: $color-dumby-emploi;
+}
+.projet-justice {
+  background: $color-dumby-justice;
+}
+.projet-education {
+  background: $color-dumby-dblue;
+}
+.projet-sante {
+  background: $color-dumby-sante;
+}
+.projet-culture {
+  background: $color-dumby-culture;
 }

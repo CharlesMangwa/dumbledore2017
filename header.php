@@ -58,7 +58,7 @@
 
     <header class="PrimaryHeader">
         <nav class="PrimaryHeader__wrapper primary-navigation">
-              <img src="<?php bloginfo( 'template_url' )?>/assets/images/logo-dumby.svg" alt="logo" class="PrimaryHeader__wrap__navbar__logo" />
+              <a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo( 'template_url' )?>/assets/images/logo-dumby.svg" alt="logo" class="PrimaryHeader__wrap__navbar__logo" /></a>
               <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'HeaderMenu' ) ); ?>
         </nav>
     </header>
