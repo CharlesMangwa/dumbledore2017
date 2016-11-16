@@ -103,7 +103,7 @@
   // Get fifth li element from menu
   > li:nth-child(5) {
     border: bold solid $color-danger;
-    transition: ease-out 100ms;
+    transition: all ease-out 300ms;
 
     a {
       color: $color-danger;
@@ -113,6 +113,9 @@
       background: $color-danger;
       a {
         color: $color-body;
+      }
+      a:before {
+        visibility: hidden;
       }
     }
   }
@@ -130,6 +133,9 @@
       background: $color-dumby-blue;
       a {
         color: $color-body;
+      }
+      a:before {
+        visibility: hidden;
       }
     }
   }
