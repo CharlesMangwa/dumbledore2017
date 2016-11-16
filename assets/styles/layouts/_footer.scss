@@ -88,6 +88,13 @@
   align-items: flex-start;
   flex-flow: column wrap;
 
+  &:nth-of-type(2),
+  &:nth-of-type(4) {
+    .menu {
+      margin-left: -40px;
+    }
+  }
+
   // Responsive
   @media only screen and (max-width: 868px) {
     align-items: center;

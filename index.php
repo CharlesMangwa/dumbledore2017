@@ -34,12 +34,12 @@
     <li class="Homepage__content__section__dunno">
       <div class="Homepage__content__section__dunno__content">
         <h2>83</h2>
-        <p>je sais pas quoi</p>
+        <p>propositions de lois</p>
         <h4>2015 - 2016</h4>
         <h5>d</p>
-          <h2>9</h2>
-          <p>je sais pas quoi</p>
-          <h4>de je sais pas qui</h4>
+          <h2>5</h2>
+          <p>grands chantiers</p>
+          <h4>2017 - 2022</h4>
         </div>
       </li>
     </ul>
@@ -95,7 +95,7 @@
           <h2>nos actualités</h2>
         </div>
         <div class="Homepage__content__section--fourth__heading__buton">
-          <a href="<?php echo get_page_link(87); ?>" class="Homepage__content__section--fourth__heading__buton--modifier button">Tout les articles</a>
+          <a href="<?php echo get_page_link(87); ?>" class="Homepage__content__section--fourth__heading__buton--modifier button">Tous les articles</a>
         </div>
       </li>
       <li class="Homepage__content__section--fourth__actuTop MainWrapper">
