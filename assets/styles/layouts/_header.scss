@@ -72,6 +72,16 @@
     justify-content: space-between;
   }
 
+  > li a {
+    transition: all ease-out 300ms;
+
+    &:hover {
+      color: $color-dumby-blue;
+      transition: all ease-in 200ms;
+    }
+  }
+
+
   // Get fifth li element from menu
   > li:nth-child(5) {
     border: bold solid $color-danger;
