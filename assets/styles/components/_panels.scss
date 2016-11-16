@@ -127,23 +127,58 @@
 }
 
 .projet-securite {
-  background: $color-danger;
+  background-color: $color-danger;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-danger, 10%);
+    transition: all ease-in 200ms;
+  }
 }
 .projet-education {
-  background: $color-dumby-dblue;
+  background-color: $color-dumby-dblue;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-dumby-dblue, 10%);
+    transition: all ease-in 200ms;
+  }
 }
 .projet-emploi {
-  background: $color-dumby-emploi;
+  background-color: $color-dumby-emploi;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-dumby-emploi, 10%);
+    transition: all ease-in 200ms;
+  }
 }
 .projet-justice {
-  background: $color-dumby-justice;
+  background-color: $color-dumby-justice;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-dumby-justice, 10%);
+    transition: all ease-in 200ms;
+  }
 }
 .projet-education {
-  background: $color-dumby-dblue;
+  background-color: $color-dumby-dblue;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-dumby-dblue, 10%);
+    transition: all ease-in 200ms;
+  }
 }
 .projet-sante {
-  background: $color-dumby-sante;
+  background-color: $color-dumby-sante;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-dumby-sante, 10%);
+    transition: all ease-in 200ms;
+  }
 }
 .projet-culture {
-  background: $color-dumby-culture;
+  background-color: $color-dumby-culture;
+  transition: all ease-out 300ms;
+  &:hover {
+    background-color: darken($color-dumby-culture, 10%);
+    transition: all ease-in 200ms;
+  }
 }
