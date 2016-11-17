@@ -166,6 +166,7 @@
     color: $color-body;
     margin: 10px 0;
     text-align: center;
+    line-height: 35px;
   }
   h5 {
     color: $color-body;
@@ -208,6 +209,30 @@
     color: $color-dumby-white;
     border: large solid $color-dumby-dblue;
     padding: 17px 40px 18px 40px;
+  }
+
+  .wpcf7-form p{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+
+      // Responsive
+      @media only screen and (max-width: 868px) {
+        flex-flow: column wrap;
+        height: 225px;
+
+        .contact-email {
+          text-align: center;
+        }
+
+        .contact-postal {
+          text-align: center;
+          width: 365px;
+          padding-left: 52.5px;
+        }
+      }
   }
 }
 
