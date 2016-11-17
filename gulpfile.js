@@ -92,6 +92,7 @@ gulp.task('scripts', ['lint', 'webpack'], () => (
         .pipe(rename({ suffix: '.min' }))
         .pipe(babel({
           presets: ['es2015', 'babel-preset-stage-0'],
+          plugins: ['syntax-decorators'],
         }))
         .pipe(uglify())
         .pipe(gulpif(!enabled.production, sourcemaps.write()))
@@ -182,7 +183,8 @@ gulp.task('default', [
                   include:root,
                   loader: "babel",
                   query: {
-                      presets: ['es2015', 'babel-preset-stage-0']
+                      presets: ['es2015', 'babel-preset-stage-0'],
+                      plugins: ['syntax-decorators']
                   }
               }
           ]
