@@ -1,0 +1,44 @@
+.give__main-form{
+    max-width: 60vw;
+    background-color: #ffffff;
+    margin: 3vw auto;
+    padding: 3vw;
+}
+
+.give_error{
+    display: none;
+}
+
+#give_checkout_user_info input{
+    border: transparent;
+    border-bottom: solid 2px $color-h2;
+    font-family: $font-family-sans;
+}
+
+.give-donation-level-btn, .give-submit{
+    background-color: $color-h2;
+    color: $color-dumby-white;
+}
+
+.give-donation-level-btn:hover,.give-donation-level-btn:focus, .give-submit:hover{
+    background-color: $color-danger  ;
+}
+
+.give-label, #give-final-total-wrap{
+    display: none !important;
+}
+
+.give-submit{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.thanks__content{
+    max-width: 70vw;
+    transform: translateY(-12vw);
+    padding: 2vw;
+    background-color: #ffffff;
+    margin:0 auto;
+}
