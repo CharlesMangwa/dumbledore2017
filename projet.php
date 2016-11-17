@@ -10,29 +10,30 @@ Template Name: projet
     <li><h2>nos propositions</h2></li>
     <li>
       <ul class="ProjetTemplate__headings__tiles">
-        <li>éducation</li>
-        <li>emploi</li>
-        <li>justice</li>
-        <li>santé</li>
-        <li>sécurité</li>
-        <li>culture</li>
+        <?php $terms = get_terms('categorie-projet', 'hide_empty=0'); ?>
+        <?php if (!empty($terms) && !is_wp_error($terms)): ?>
+          <?php foreach ($terms as $term)
+                {
+                    echo '<a href="#" class="ProjetOrder" title="' . $term->name . '"data-id="' . $term->term_id . '"><li>' . $term->name . '</li></a>';
+                }
+          ?>
+        <?php endif; ?>
       </ul>
     </li>
   </ul>
   <ul class="ProjetTemplate__projects MainWrapper">
     <?php
+    if( is_front_page() ){
+        $paged = (get_query_var('page')) ? get_query_var('page') : 1;
+    } else {
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    }
 
-      // if( is_front_page() ){
-      //     $paged = (get_query_var('page')) ? get_query_var('page') : 1;
-      // } else {
-      //     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      // }
-
-      $args = array(
+      $args=array(
         'post_type' => 'projets',
         'posts_per_page' => 6,
-        // 'paged' => $paged,
-      );
+        'paged' => $paged,
+     );
       $the_projets_query = new WP_Query( $args );
       if ( $the_projets_query->have_posts() ) : while ( $the_projets_query->have_posts() ) : $the_projets_query->the_post();
         get_template_part( 'templates/partials/panels-projet');
@@ -42,10 +43,10 @@ Template Name: projet
   </ul>
 
   <?php
-    // if( $the_projets_query->max_num_pages > $paged)
-    // {
-    //     echo '<a href="#" class="button buttonMore" data-id="'.$term_id.'" data-paged="'.($paged+1).'">Voir plus</a>';
-    // }
+    if( $the_projets_query->max_num_pages > $paged)
+    {
+        echo '<a href="#" class="button buttonMore MainWrapper" data-paged="'.($paged+1).'">Voir plus</a>';
+    }
    ?>
 </main>
 <?php get_footer(); ?>

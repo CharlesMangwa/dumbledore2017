@@ -26,6 +26,11 @@
   flex-flow: row wrap;
   justify-content: space-between;
 
+  a {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
   li {
     background: $color-dumby-wgrey;
     font-family: $font-family-title;
@@ -46,4 +51,11 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.buttonMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  flex: 1 1 auto;
 }

@@ -123,4 +123,60 @@ function blujay_widgets_init() {
     ));
 }
 add_action( 'widgets_init', 'blujay_widgets_init' );
-?>
+
+// AJAX
+add_action('wp_ajax_more-content','more_content_function');
+add_action('wp_ajax_nopriv_more-content','more_content_function');
+
+function more_content_function()
+{
+  global $_POST;
+
+  $paged = $_POST['paged'];
+
+  $args=array(
+    'post_type' => 'projets',
+    'posts_per_page' => 6,
+    'paged' => $paged,
+ );
+  $the_projets_query = new WP_Query( $args );
+  if ( $the_projets_query->have_posts() ) : while ( $the_projets_query->have_posts() ) : $the_projets_query->the_post();
+    get_template_part( 'templates/partials/panels-projet');
+    endwhile;
+  endif;
+
+  die();
+}
+
+// AJAX
+add_action('wp_ajax_filtre-category','filtre_category_function');
+add_action('wp_ajax_nopriv_filtre-category','filtre_category_function');
+
+function filtre_category_function()
+{
+  global $_POST;
+
+  $term_id = $_POST['term_id'];
+  $paged = $_POST['paged'];
+
+  $args=array(
+    'post_type' => 'projets',
+    'posts_per_page' => 6,
+    'paged' => $paged,
+    'tax_query' => array(
+            array(
+                'taxonomy' => 'categorie-projet',
+                'field'    => 'term_id',
+                'terms'    => $term_id,
+            ),
+          )
+  );
+
+  $the_projets_query = new WP_Query( $args );
+  if ( $the_projets_query->have_posts() ) : while ( $the_projets_query->have_posts() ) : $the_projets_query->the_post();
+    get_template_part( 'templates/partials/panels-projet');
+    endwhile;
+  endif;
+
+  die();
+}

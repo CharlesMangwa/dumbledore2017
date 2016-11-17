@@ -23,6 +23,9 @@
   "rules": {
     "arrow-parens": ["error", "always"],
     "semi": [2, "never"],
+    "class-methods-use-this": 0,
+    "no-underscore-dangle": 0,
+    "no-useless-escape": 0,
     "no-floating-decimal": 0,
     "import/no-unresolved": 0,
     "import/newline-after-import": 0,

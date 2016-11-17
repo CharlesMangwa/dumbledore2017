@@ -260,3 +260,17 @@ function woocommerce_support() {
 }
 // Or just remove them all in one line
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+// TAXONOMIES
+add_action('init', 'create_custom_taxonomy');
+function create_custom_taxonomy(){
+  $args = array(
+          'label' => 'Catégorie projet',
+          'rewrite' => array( 'slug' => 'categorie-projet' ),
+          'hierarchical' => true,
+      );
+  register_taxonomy(
+    'categorie-projet',
+    array('projets'),
+     $args );
+}

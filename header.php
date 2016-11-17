@@ -51,6 +51,9 @@
 
     <link rel="shortcut icon" href="<?php echo THEMEDIR ?>/favicon.png">
     <link rel="apple-touch-icon" href="<?php echo THEMEDIR ?>/apple-touch-icon.png">
+    <script type="text/javascript">
+      var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>"
+    </script>
     <?php wp_head(); ?>
 </head>
 
