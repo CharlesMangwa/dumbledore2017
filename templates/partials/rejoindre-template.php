@@ -11,13 +11,13 @@
           <h2 class="actu-single-title">rejoindre un comité</h2>
           <h5>d</h5>
           <p>
-            Albus Perceval Wulfric Brian Dumbledore, est l'une des figures politique les plus éminentes de tous les temps, le directeur de l'ENA depuis 1988. Avant cette nomination en remplacement du préfet Bernard Boucault, il était professeur de Sciences politiques.
+            Partout en France et dans le monde, les Français s'engagent pour Albus Dumbledore en recrutant des soutiens sur le terrain. Vous aussi, rejoignez dès aujourd'hui un comité AD! près de chez vous !
           </p>
         </div>
-        <ul class="AboutUl">
-          <li class="Homepage__content__section--fourth__actuTop MainWrapper AboutFlex">
-
-          </li>
+        <ul class="JoinContent">
+          <li><?php echo do_shortcode('[contact-form-7 id="116" title="Rejoindre"]'); ?></li>
+          <li><?php echo do_shortcode('[ank_google_map]'); ?></li>
+          <?php get_template_part( 'templates/partials/networks');?>
         </ul>
     </section>
 </article>

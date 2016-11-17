@@ -253,3 +253,10 @@ function create_custom_post_type_apropos(){
     );
     register_post_type( 'a-propos', $args );
 }
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+// Or just remove them all in one line
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );

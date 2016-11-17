@@ -4,7 +4,7 @@ Template Name: rejoindre
 */
 ?>
 <?php get_header(); ?>
-<main class="SingleActu">
+<main class="SingleActu Join">
   <div class="SingleActu__thumbnail">
     <img src="<?php bloginfo( 'template_url' )?>/assets/images/dumby.png" alt="logo" class="AboutImage"/>
   </div>
