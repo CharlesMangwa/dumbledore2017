@@ -51,6 +51,7 @@
 
     <link rel="shortcut icon" href="<?php echo THEMEDIR ?>/favicon.png">
     <link rel="apple-touch-icon" href="<?php echo THEMEDIR ?>/apple-touch-icon.png">
+    
     <?php wp_head(); ?>
 </head>
 
