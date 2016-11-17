@@ -4,7 +4,31 @@
  */
 ?>
 <ul class="NetworkList">
-  <a href="#"><li class="button">partager<span><img src="<?php bloginfo( 'template_url' )?>/assets/images/facebook-icon.svg" alt="partager sur facebook" /></span></li></a>
-  <a href="#"><li class="button">tweeter<span><img src="<?php bloginfo( 'template_url' )?>/assets/images/twitter-icon.svg" alt="partager sur twitter" /></span></li></a>
-  <a href="#"><li class="button">email<span><img src="<?php bloginfo( 'template_url' )?>/assets/images/mail-icon.svg" alt="partager sur facebook" /></span></li></a>
+  <a href="#">
+    <li class="button">partager
+      <span>
+        <svg width="56.693" height="56.693" viewBox="0 0 56.693 56.693" xmlns="http://www.w3.org/2000/svg">
+          <path id="svg" d="M40.43 21.74h-7.645v-5.015c0-1.883 1.248-2.322 2.127-2.322h5.395V6.125l-7.43-.03c-8.248 0-10.125 6.175-10.125 10.126v5.52h-4.77v8.53h4.77v24.137h10.033V30.27h6.77l.875-8.53z" fill="#213958"/>
+        </svg>
+      </span>
+    </li>
+  </a>
+  <a href="#">
+    <li class="button">tweeter
+      <span>
+        <svg width="50" height="41" viewBox="0 0 50 41" xmlns="http://www.w3.org/2000/svg">
+          <path id="svg" d="M49.837 5.065c-1.81.805-3.76 1.348-5.805 1.59 2.088-1.25 3.69-3.23 4.444-5.59-1.953 1.158-4.115 2-6.418 2.453C40.215 1.554 37.588.326 34.68.326c-5.58 0-10.105 4.525-10.105 10.107 0 .79.09 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56-.87 1.492-1.368 3.228-1.368 5.082 0 3.506 1.784 6.6 4.496 8.412-1.656-.053-3.215-.508-4.578-1.265v.128c0 4.896 3.483 8.98 8.107 9.91-.845.23-1.74.354-2.66.354-.652 0-1.285-.063-1.902-.182 1.287 4.015 5.02 6.938 9.44 7.02-3.458 2.71-7.815 4.326-12.55 4.326-.816 0-1.62-.045-2.412-.14 4.474 2.87 9.786 4.54 15.493 4.54 18.59 0 28.755-15.4 28.755-28.754 0-.438-.01-.875-.028-1.31 1.974-1.42 3.688-3.202 5.042-5.23z" fill="#55ACEE" fill-rule="evenodd"/>
+        </svg>
+      </span>
+    </li>
+  </a>
+  <a href="#">
+    <li class="button">email
+      <span>
+        <svg width="91" height="60" viewBox="0 0 91 60" xmlns="http://www.w3.org/2000/svg">
+          <path id="svg" d="M.3.3v59.1h90.4V.3H.3zm76.2 6.6L46.1 26.6 15.6 6.9h60.9zm7.7 45.9H6.9V9l39.2 25.5L84.2 9.8v43z" fill="#d81128" stroke-width="2" fill-rule="evenodd"/>
+        </svg>
+      </span>
+    </li>
+  </a>
 </ul>
