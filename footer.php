@@ -34,7 +34,7 @@
             </li>
             <li><p class="PrimaryFooter__wrap__container__subnav--newsletter__children--text">Inscrivez-vous à notre newsletter<br>pour recevoir nos actualités :</p></li>
             <li>
-              <?php echo do_shortcode('[mc4wp_form id="32"]'); ?>
+              <?php echo do_shortcode('[mc4wp_form id="39"]'); ?>
             </li>
           </ul>
         </div>
@@ -50,6 +50,7 @@
   </nav>
 </div>
 </footer>
+
 
 <?php wp_footer(); ?>
 </body>

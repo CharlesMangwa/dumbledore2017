@@ -60,6 +60,14 @@ define( 'THEMEDIR', get_template_directory_uri() );
 define( 'ASSETDIR', THEMEDIR . '/assets' );
 define( 'DISTDIR', THEMEDIR . '/dist' );
 
+function my_enqueue() {
+
+
+
+
+}
+add_action( 'wp_enqueue_scripts', 'my_enqueue' );
+
 /**
  * Register assets
  */
