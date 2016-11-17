@@ -1,7 +1,9 @@
 {
     "path": {
         "assets": "assets/",
-        "dist": "dist/"
+        "dist": "dist/",
+        "entry": "assets/scripts/main.js",
+        "output": "dist/scripts/"
     },
     "dependencies": {
         "scripts": [

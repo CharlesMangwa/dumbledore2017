@@ -24,8 +24,11 @@ const runSequence  = require('run-sequence')
 const sass         = require('gulp-sass')
 const sourcemaps   = require('gulp-sourcemaps')
 const uglify       = require('gulp-uglify')
+const webpack      = require('webpack-stream')
 
 // Get project config
+const way          = require('path')
+const root         = way.resolve(__dirname)
 const config       = require('./assets/config.json')
 const path         = config.path
 const dependencies = config.dependencies
@@ -78,7 +81,11 @@ gulp.task('styles', () => (
 // ## Scripts
 // 'gulp scripts' - Lints, transpiles ES6, combines, minifies and generates
 // source maps for scripts
-gulp.task('scripts', ['lint'], () => (
+gulp.task('webpack', () => (
+  gulp.src("./assets/scripts/main.js").pipe(webpack(require('./webpack.config.js'))).pipe(gulp.dest("dist/scripts/"))
+))
+
+gulp.task('scripts', ['lint', 'webpack'], () => (
     gulp.src(dependencies.scripts)
         .pipe(plumber(plumberOptions))
         .pipe(gulpif(!enabled.production, sourcemaps.init()))
@@ -145,15 +152,45 @@ gulp.task('reload', () => {
 //  should use the `gulp` task to ensure a proper build
 gulp.task('build', () => {
   require('gulp-stats')(gulp)
-  runSequence('styles', 'scripts', ['fonts', 'images'])
+  runSequence('styles', 'scripts', ['fonts', 'images'], 'webpack')
 })
 
 // ## Gulp
 // 'gulp' - Builds all assets
 // 'gulp --production' - Builds all assets for production (no source maps)
-gulp.task('default', () => {
-  runSequence('clean', 'build', 'watch')
-})
+
+gulp.task('default', [
+    'clean', 'build', 'images', 'watch'
+], () => (
+  gulp.src("./assets/scripts/main.js").pipe(webpack({
+      context: __dirname,
+      node: {
+          __filename: true
+      },
+      watch: false,
+      entry: {
+          app: ["./assets/scripts/main.js"]
+      },
+      output: {
+          path: way.resolve(__dirname , "./dist/scripts/main.js"),
+          filename: "bundle.js"
+      },
+      module: {
+          loaders: [
+              {
+                  test: /\.js$/,
+                  exclude: /(nodes_modules|bower_components)/,
+                  include:root,
+                  loader: "babel",
+                  query: {
+                      presets: ['es2015', 'babel-preset-stage-0']
+                  }
+              }
+          ]
+      }
+    }))
+  .pipe(gulp.dest('app/dist/js/'))
+))
 
 // ## Watch
 // 'gulp watch' - Monitors theme files and assets for changes and live reloads
@@ -169,7 +206,7 @@ gulp.task('watch', () => {
   })
   gulp.watch(['**/*.php'], ['reload'])
   gulp.watch([path.assets + 'styles/**/*'], ['styles'])
-  gulp.watch([path.assets + 'scripts/**/*'], ['scripts'])
-  gulp.watch([path.assets + 'fonts/**/*'], ['fonts'])
   gulp.watch([path.assets + 'images/**/*'], ['images'])
+  gulp.watch([path.assets + 'scripts/**/*'], ['scripts', 'webpack'])
+  gulp.watch([path.assets + 'fonts/**/*'], ['fonts'])
 })
