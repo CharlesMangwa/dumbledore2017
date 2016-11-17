@@ -35,7 +35,6 @@ const dependencies = config.dependencies
 
 // Command line options
 const enabled = {
-
   // Enable production build argument
   production: argv.production,
 }

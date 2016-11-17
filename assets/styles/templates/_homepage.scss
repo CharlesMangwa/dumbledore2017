@@ -14,12 +14,46 @@
 // HEADING SLIDER //
 //------------------------------------o
 .Homepage__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 100vw;
-  height: 75vh;
-  background-image: url('../images/background-slider.png');
-  background-repeat: no-repeat;
+  height: 60vh;
+  transform: scaleX(-1);
+  filter: FlipH;
+  background: url('../images/background-slider.png') no-repeat 40% center;
   background-size: cover;
-  background-position: center;
+}
+
+.Homepage__heading__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 150px 200px 0;
+  height: 85px;
+  transform: scaleX(-1);
+  filter: FlipH;
+
+  // Responsive
+  @media only screen and (max-width: 850px) {
+    align-self: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: #D6D6D6;
+    margin: 0;
+    line-height: 45px;
+  }
+
+  h4 {
+    font-size: 32px;
+    color: $color-body;
+    margin: -30px 0 0 0;
+    line-height: 45px;
+  }
 }
 
 // EACH SECTION STYLE //
