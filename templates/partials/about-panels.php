@@ -5,7 +5,7 @@
 ?>
 
 <article id="actu-<?php the_ID(); ?>" class="actu content content-actu MainWrapper">
-
+  
     <section class="actu-featured-image">
         <?php the_post_thumbnail(); ?>
     </section>

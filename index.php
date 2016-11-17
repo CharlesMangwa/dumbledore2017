@@ -7,7 +7,10 @@
 
 <div class="Homepage">
   <section class="Homepage__heading">
-
+    <div class="Homepage__heading__content">
+      <h4>Pour la magie du changement</h4>
+      <h2>- Albus Dumbledore -</h2>
+    </div>
   </section>
 </div>
 <main class="Homepage__content">
