@@ -1,5 +1,7 @@
 /**
  * Main scripts
  */
-const array = [0, 1, 2]
+
+import array from './ES8'
+
 console.log(`ES8 support: ${array.includes(2)}`)

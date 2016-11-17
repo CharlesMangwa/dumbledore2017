@@ -3,39 +3,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    max-height: 45px;
+    font-size: 14px;
     padding: 7px 30px;
   }
+
   span {
     width: 15px;
-    margin: 2px -10px 0 30px;
+    margin: 2px -10px 0 20px;
   }
 
-  img {
+  svg {
     width: 20px;
     height: auto;
-    fill: $color-dumby-dblue;
   }
+
+  li:hover #svg {
+    fill: #fff;
+    transition-delay: 200ms;
+  }
+
   a:nth-child(2) {
+    svg {
+      margin-top: 4px;
+    }
     li {
       border: solid #55acee;
       color: #55acee;
     }
+    li:before {
+      background-color: #55acee;
+    }
     li:hover {
-      background: #55acee;
       color: #FFF;
-      img {
-        fill: #fff;
-      }
     }
   }
+
   a:nth-child(3) {
     li {
       border: solid $color-danger;
       color: $color-danger;
     }
+    li:before {
+      background-color: $color-danger;
+    }
     li:hover {
-      background: $color-danger;
       color: #FFF;
     }
   }

@@ -166,6 +166,7 @@
     color: $color-body;
     margin: 10px 0;
     text-align: center;
+    line-height: 35px;
   }
   h5 {
     color: $color-body;
@@ -209,6 +210,38 @@
     border: large solid $color-dumby-dblue;
     padding: 17px 40px 18px 40px;
   }
+
+  .wpcf7-form p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+
+    // Responsive
+    @media only screen and (max-width: 868px) {
+      flex-flow: column wrap;
+      height: 225px;
+
+      .contact-email {
+        text-align: center;
+      }
+
+      .contact-postal {
+        text-align: center;
+        width: 365px;
+        padding-left: 52.5px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    height: 500px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
 }
 
 // SECTION 3 //
@@ -218,6 +251,13 @@
   &__firstChild {
     margin: 120px 0 80px 0;
     max-width: 55%;
+    // Responsive
+    @media only screen and (max-width: 450px) {
+      h2 {
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
     // Responsive
     @media only screen and (max-width: 1100px) {
       margin: 120px auto;
@@ -266,10 +306,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   // Responsive
   @media only screen and (max-width: 1100px) {
     text-align: center;
     flex-direction: column;
+
+    .Homepage__content__section--fourth__heading__button {
+      margin-top: 50px;
+    }
   }
 }
 // Pinned actu
@@ -278,6 +323,10 @@
   margin-bottom: 60px;
   display: flex;
   justify-content: flex-end;
+
+  @media only screen and (max-width: 1100px) {
+    margin-bottom: 0px;
+  }
 }
 
 // Other actus
@@ -286,6 +335,14 @@
   margin-bottom: 60px;
   display: flex;
   flex-flow: row wrap;
+
+  @media only screen and (max-width: 1100px) {
+    margin-top: 0px;
+
+    article {
+      margin-top: 25px;
+    }
+  }
 }
 
 // SECTION 5 //

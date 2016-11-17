@@ -18,6 +18,14 @@
     margin-bottom: 40px;
   }
 
+  .post-content p {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: justify;
+    -moz-osx-font-smoothing: greyscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
   .comments-link {
     display: block;
     margin-top: 10px;

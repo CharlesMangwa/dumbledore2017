@@ -23,6 +23,7 @@
 @import "components/network-list";
 @import "components/widgets";
 @import "components/buttons";
+@import "components/join-form";
 
 // Layouts
 @import "layouts/footer";
@@ -44,4 +45,7 @@
 @import "templates/actus";
 @import "templates/about";
 @import "templates/projet";
+@import "templates/boutique";
 
+// woocommerce
+@import "woocommerce/woo-main";
