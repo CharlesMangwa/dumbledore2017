@@ -30,7 +30,7 @@
     </section>
 
     <footer class="post-footer">
-        <a href="<?php the_permalink(2); ?>" class="button post-button button--wayra">En savoir plus</a>
+        <a href="<?php the_permalink(2); ?>" class="button post-button">En savoir plus</a>
     </footer>
 
 </article>
