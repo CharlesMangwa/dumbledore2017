@@ -4,8 +4,8 @@
 */
 get_header(); ?>
 
-<div class=="give__background">
-  <div class="give__main-form"><?php echo do_shortcode('[give_form id="34"]'); ?></div>
-</div>
+  <div class="give__main-form">
+    <?php echo do_shortcode('[give_form id="34"]'); ?>
+  </div>
 <?php
 get_footer();
