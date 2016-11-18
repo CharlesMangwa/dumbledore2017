@@ -36,7 +36,7 @@ get_header(); ?>
       <ul class="WooArchiveHeading__content MainWrapper">
         <li><h4>montrez votre soutien</h4></li>
         <li><h2><?php woocommerce_page_title(); ?></h2></li>
-        <li><h5><?php do_action( 'woocommerce_before_main_content' ); ?></h5></li>
+
         <!-- <li>
           <ul class="WooArchiveHeading__tiles">
             <li>vêtement</li>
