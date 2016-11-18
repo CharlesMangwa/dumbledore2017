@@ -10,6 +10,7 @@ Template Name: projet
     <li><h2>nos propositions</h2></li>
     <li>
       <ul class="ProjetTemplate__headings__tiles">
+        <a href="#" class="ProjectOrder ProjectAll"><li>Tous</li></a>
         <?php $terms = get_terms('categorie-projet', 'hide_empty=0'); ?>
         <?php if (!empty($terms) && !is_wp_error($terms)): ?>
           <?php foreach ($terms as $term)
