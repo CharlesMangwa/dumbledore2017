@@ -8,6 +8,7 @@
   width: 100vw;
   height: 120px;
   border-bottom: thin solid rgba($color-border, .4);
+  overflow-x: hidden;
 
   // Responsive
   @media only screen and (max-width: 868px) {
