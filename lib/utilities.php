@@ -98,7 +98,7 @@ function create_custom_post_type_projets(){
   $labels = array(
         'name'               => 'Projet',
         'singular_name'      => 'Projet',
-        'all_items'          => 'Tout les projets',
+        'all_items'          => 'Tous les projets',
         'add_new'            => 'Ajouter un projet',
         'add_new_item'       => 'Ajouter un nouveaux projet',
         'edit_item'          => "Modifier le projet",

@@ -38,6 +38,7 @@ export default class NyanCat
       console.clear()
       console.log(__nyan[_nyan].join('\n'))
       if (_nyan === 0) { _nyan = 1 } else { _nyan = 0 }
+      console.debug('Pour la magie du changement !')
     }
 
     window.setInterval(nyan, 300)
